@@ -133,10 +133,25 @@ nav .signin {
 }
 
 .listing {
-    padding: 50px;
+    padding: 150px 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
 }
 
-.listing > div {
+.listing::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/coverbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.listing-bg {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
