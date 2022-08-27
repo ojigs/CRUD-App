@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -23,8 +25,11 @@
         </nav>
     </header>
     <main class="">
-        <div class="coverbg"></div>
-        <h1>BuyProp <span>Nigeria's foremost leader in the Real Estate Industry</span></h1>
+        <div class="main-wrapper">
+            <h1>BuyProp <span>Nigeria's foremost leader in the Real Estate Industry</span></h1>
+            <div class="coverbg"></div>
+        </div>
+        
     </main>
     <section class="partners">
         <h2 class="text-center">Our partners have confidence in our business</h2>
@@ -38,78 +43,137 @@
 
     <section class="listing">
         <div class="listing-bg">
-            <section class="card">
-                <img src="img/house1.jpg" alt="" width="350px" height="350px">
-                <div class="over">
-                    <img src="" alt="" width="" height="">
-                    <img src="" alt="" width="" height="">
-                    <h3>View listing</h3>
-                </div>
-                <div class="card-description">
-                    <h4 id="listing-title">2 bedroom duplex</h4>
-                    <span></span>
-                </div>
-            </section>
-            <section class="card">
-                <img src="img/house2.jpg" alt="" width="350px" height="350px">
-                <div class="over">
-                    <img src="" alt="" width="" height="">
-                    <img src="" alt="" width="" height="">
-                    <h3>View listing</h3>
-                </div>
-                <div class="card-description">
-                    <h4 id="listing-title">2 bedroom duplex</h4>
-                    <span></span>
-                </div>
-            </section>
-            <section class="card">
-                <img src="img/house3.jpg" alt="" width="350px" height="350px">
-                <div class="over">
-                    <img src="" alt="" width="" height="">
-                    <img src="" alt="" width="" height="">
-                    <h3>View listing</h3>
-                </div>
-                <div class="card-description">
-                    <h4 id="listing-title">2 bedroom duplex</h4>
-                    <span></span>
-                </div>
-            </section>
-            <section class="card">
-                <img src="img/house4.jpg" alt="" width="350px" height="350px">
-                <div class="over">
-                    <img src="" alt="" width="" height="">
-                    <img src="" alt="" width="" height="">
-                    <h3>View listing</h3>
-                </div>
-                <div class="card-description">
-                    <h4 id="listing-title">2 bedroom duplex</h4>
-                    <span></span>
-                </div>
-            </section>
-            <section class="card">
-                <img src="img/house5.jpg" alt="" width="350px" height="350px">
-                <div class="over">
-                    <img src="" alt="" width="" height="">
-                    <img src="" alt="" width="" height="">
-                    <h3>View listing</h3>
-                </div>
-                <div class="card-description">
-                    <h4 id="listing-title">2 bedroom duplex</h4>
-                    <span></span>
-                </div>
-            </section>
-            <section class="card">
-                <img src="img/addin.png" alt="" width="350px" height="350px">
-            </section>
-            <button type="button">See more >></button>
+            <!-- <button type="button">See more >></button>  -->
+            <h2>Our Listings</h2>
+            <ul>
+                <li class="booking-card"
+                    style="background-image: url(./img/house1.jpg)">
+                    <div class="book-container">
+                        <div class="content">
+                            <button class="btn">New</button>
+                        </div>
+                    </div>
+                    <div class="informations-container">
+                        <h3 class="title">4 bedroom detached duplex</h3>
+                        <p class="sub-title">4 bedroom duplex for sale</p>
+                        <p class="price">
+                            <i class="fa-solid fa-money-bill"></i>
+                            ₦65,000,000</p>
+                        <div class="more-information">
+                            <div class="info-and-date-container">
+                                <div class="box info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <p>Ikota Villa Estate, Lekki Ikota Lekki Lagos</p>
+                                </div>
+                                <div class="box date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>April 2022</p>
+                                </div>
+                            </div>
+                            <p class="disclaimer">The 4 Bedroom Duplex is tastefully finished and well structured. The living space and bedrooms are massive and it gives you the comfort that you need</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="booking-card"
+                    style="background-image: url(./img/house2.jpg);">
+                    <div class="book-container">
+                        <div class="content">
+                            <button class="btn">New</button>
+                        </div>
+                    </div>
+                    <div class="informations-container">
+                        <h3 class="title">Luxurious Built 2bedroom Apartments</h3>
+                        <p class="sub-title">2 bedroom Flat & Apartment For Sale</p>
+                        <p class="price"><i class="fa-solid fa-money-bill"></i>₦45,000,000</p>
+                        <div class="more-information">
+                            <div class="info-and-date-container">
+                                <div class="box info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <p>Ogunlana Drive Surulere Lagos</p>
+                                </div>
+                                <div class="box date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>June 2022</p>
+                                </div>
+                            </div>
+                            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
+                                perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="booking-card"
+                    style="background-image: url(./img/house3.jpg);">
+                    <div class="book-container">
+                        <div class="content">
+                            <button class="btn">New</button>
+                        </div>
+                    </div>
+                    <div class="informations-container">
+                        <h3 class="title">Beautiful 5 Bedroom Fully Detached Duplex With Bq</h3>
+                        <p class="sub-title">5 bedroom Duplex For Sale</p>
+                        <p class="price"><i class="fa-solid fa-money-bill"></i>₦150,000,000</p>
+                        <div class="more-information">
+                            <div class="info-and-date-container">
+                                <div class="box info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <p>Chevron Drive Lekki Lagos</p>
+                                </div>
+                                <div class="box date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>September 2022</p>
+                                </div>
+                            </div>
+                            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
+                                perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="booking-card"
+                    style="background-image: url(./img/house4.jpg);">
+                    <div class="book-container">
+                        <div class="content">
+                            <button class="btn">New</button>
+                        </div>
+                    </div>
+                    <div class="informations-container">
+                        <h3 class="title">Well Finished 5 Bedroom Fully Detached Duplex</h3>
+                        <p class="sub-title">5 bedroom Duplex For Sale</p>
+                        <p class="price"><i class="fa-solid fa-money-bill"></i>₦85,000,000</p>
+                        <div class="more-information">
+                            <div class="info-and-date-container">
+                                <div class="box info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <p>Osapa London Osapa Lekki Lagos</p>
+                                </div>
+                                <div class="box date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>August 2022</p>
+                                </div>
+                            </div>
+                            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet
+                                perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="booking-card"
+                    style="background-image: url(./img/addin.png)">
+                    <div class="information-container">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
     <section class="about">
-        <h4>About Us</h4>
-        <div></div>
-        <p>The leading real estate rental place. Iste porro sit quasi enim numquam blanditiis dignissimos nostrum quidem, non delectus maiores sapiente, magnam quas asperiores, corporis tempora aliquid velit omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eveniet quis nemo reprehenderit molestias nesciunt labore aliquam dolores, hic totam officia molestiae porro adipisci laudantium modi voluptatum placeat officiis velit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptatem laborum porro, veritatis similique corrupti tempore corporis ipsam rerum, placeat velit libero dolore, obcaecati molestias eligendi aliquam omnis sint saepe!</p>
+        <div class="about-container">
+            <h4>About <span>Us</span></h4>
+            <div></div>
+            <p>The leading real estate rental place. Iste porro sit quasi enim numquam blanditiis dignissimos nostrum quidem, non delectus maiores sapiente, magnam quas asperiores, corporis tempora aliquid velit omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eveniet quis nemo reprehenderit molestias nesciunt labore aliquam dolores, hic totam officia molestiae porro adipisci laudantium modi voluptatum placeat officiis velit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet voluptatem laborum porro, veritatis similique corrupti tempore corporis ipsam rerum, placeat velit libero dolore, obcaecati molestias eligendi aliquam omnis sint saepe!</p>
+            <div class="ball f1"></div>
+            <div class="ball f2"></div>
+        </div>
     </section>
 
     <section class="contact">
@@ -118,13 +182,85 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda cumque totam at libero non, quia, dicta, dolore quis consectetur voluptatum esse veritatis natus similique inventore aperiam tempore nesciunt beatae!</p>
 
         <form method="post" action="">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="John Doe">
-            <label for="email">Email</label>
-            <input type="email" placeholder="johndoe@example.com">
-            <textarea>Message</textarea>
-            <input type="submit" value="Submit">
+            <div class="input">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="John Doe">
+                <br><br>
+                <label for="email" name="email">Email:</label>
+                <input type="email" placeholder="johndoe@example.com">
+            </div>
+            <div class="message">
+                <textarea rows="10" cols="45" placeholder="Message"></textarea><br><br>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
         </form>
     </section>
+
+    <footer class="landing">
+        <div class="cir-cir">
+            <p>BUYPROP LTD</p>
+            <span>On our way to the office, we start preparing for the day in our minds</span>
+            <ul id="cont">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">+1 718 222 22 222</a></li>
+                <li><a href="mailto:hello@circlecircle.com?">hello@buyprop.com</a></li>
+            </ul>
+        </div>
+        <div class="cir-cir products">
+            <p>PRODUCTS</p>
+            <ul>
+                <li><a href="#">Messaging API</a></li>
+                <li><a href="#">Content Pricing</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Channels</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">API Libraries</a></li>
+                <li><a href="#">Changelog</a></li>
+                <li><a href="#">E-books</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Change</a></li>
+            </ul>
+        </div>
+        <div class="cir-cir">
+            <p>FOR USERS</p>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Learn More</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+                <li><a href="#">Protyping</a></li>
+                <li><a href="#">Sketch Business</a></li>
+            </ul>
+        </div>
+        <div class="cir-cir">
+            <p>INFORMATION</p>
+            <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Platform Features</a></li>
+                <li><a href="#">Our Copywriters</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="cir-cir">
+            <p>RESOURCES</p>
+            <ul>
+                <li><a href="#">Help Docs</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Content Marketing Blog</a></li>
+                <li><a href="#">Case Studies</a></li>
+            </ul>
+            <div class="sm-icons">
+                <ul>
+                    <a><i class="fa-brands fa-discord"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-brands fa-linkedin"></i></a>
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

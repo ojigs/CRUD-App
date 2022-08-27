@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100%;
 }
 
@@ -35,7 +35,14 @@ header {
     left: 10px;
 }
 
-main::before {
+main {
+    position: relative;
+    padding: 50px;
+    padding-bottom: 100px;
+    background: linear-gradient(to right, rgba(140, 179, 105, 0.3), white);
+}
+
+.main-wrapper::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -46,8 +53,8 @@ main::before {
     border-radius: 25px;
 }
 
-main {
-    margin: 25px 50px;
+.main-wrapper {
+    padding: 25px 50px;
     background: url(../img/rebg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +81,6 @@ main {
 main h1 {
     font-size: 70px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -82,12 +88,8 @@ main h1 span {
     display: block;
     font-size: 1.5rem;
     margin-top: 2em;
-    /* animation: movement 5s linear infinite alternate; */
     position: relative;
-    /* right: 0; */
-    /* text-align: end; */
     max-width: 350px;
-    /* font-weight: 700; */
 }
 
 nav ul {
@@ -97,12 +99,12 @@ nav ul {
 }
 
 nav a {
-    color: rgba(51, 125, 51, 0.7);
+    color: #8cb369;
 }
 
 nav .signin {
     padding: 10px 15px;
-    background-color: rgba(51, 125, 51, 0.7);
+    background-color: #8cb369;
     color: #ffffff;
     border-radius: 10px;
 }
@@ -120,25 +122,29 @@ nav .signin {
     }
 }
 
+.partners {
+    background-color: #5b8e7d;
+    color: white;
+}
+
 .partners ul {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     font-family: cursive;
-    color: blue;
 }
 
 .partners h2 {
     text-transform: uppercase;
 }
 
-.listing {
+/* .listing {
     padding: 150px 50px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #8cb369;
     position: relative;
-}
+} */
 
-.listing::before {
+/* .listing::before {
     content: "";
     height: 100%;
     width: 100%;
@@ -149,15 +155,14 @@ nav .signin {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-}
+} */
 
 .listing-bg {
-    display: flex;
+    /* display: flex;
     gap: 50px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: rgba(51, 125, 51, 0.7);
+    justify-content: space-around; */
+    padding: 0 50px;
 }
 
 .card {
@@ -186,4 +191,174 @@ nav .signin {
 
 .card:hover .over {
     display: block;
+}
+
+.about {
+    background-color: #5b8e7d;
+    color: white;
+    padding: 100px;
+    position: relative;
+}
+
+.about h4, .contact h4 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.about h4 span {
+    color: #f4a259;
+}
+
+.about h4 + div, .contact h4 + div {
+    height: 3px;
+    width: 50px;
+    border-radius: 25%;
+    background-color: #f4a259;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.about .ball {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+    border-radius: 50%;
+    background-color: #f4a259;
+}
+
+.about .ball.f1 {
+    right: 100px;
+    width: 12px;
+    height: 12px;
+    bottom: 31px;
+}
+
+/* CONTACT */
+.contact, .listing {
+    background: linear-gradient(to bottom left, rgba(244, 226, 133, 0.5), white, rgba(244, 226, 133, 0.5));
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact h4 {
+    color: #b24b51;
+}
+
+.contact h4 + div {
+    background: linear-gradient(to right, #b24b51, #f4a259);
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+}
+
+input, textarea {
+    outline: none;
+}
+
+input[type=text], input[type=email] {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #b24b51;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.submit-button:hover {
+    background-color: transparent;
+    border-color: #b24b51;
+    color: black;
+}
+
+/*Styling the footer*/
+.landing {
+    padding: 40px 100px;
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    background-color: #b24b51;
+}
+
+.cir-cir {
+    float: left;
+    margin-right: 80px;
+}
+
+.cir-cir:first-of-type {
+    width: 250px;
+    margin-right: 35px;
+}
+
+.cir-cir ul {
+    margin: 0;
+    padding: 0;
+}
+
+.cir-cir li {
+    list-style-type: none;
+    /* padding-bottom: 20px; */
+}
+
+.cir-cir a {
+    text-decoration: none;
+    color: white;
+}
+
+.cir-cir p {
+    font-weight: 700;
+}
+
+.cir-cir span {
+    display: block;
+    margin-bottom: 35px;
+}
+
+#cont li::before {
+    content: '\25a2';
+    font-size: 25px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#cont li {
+    padding-bottom: 10px;
+}
+
+.cir-cir.products ul {
+    columns: 2;
+    column-gap: 55px;
+}
+
+.cir-cir:last-of-type {
+    margin: 0;
+}
+
+.sm-icons {
+    margin-top: 20px;
+}
+
+.fa-brands {
+    font-size: 1em;
+    margin-right: 10px;
 }
